@@ -13,23 +13,39 @@ y se aplica el mismo algoritmo que para el NIF. »  */
 const letraDNI = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
 
 
-let inputNIE = "Z6936128"
+let inputNIE = "X1234567"
+
 let numberNIE
 
-
-if (inputNIE[0] === "X") {
-  numberNIE = "0"+inputNIE.substring(1)
+if (typeof inputNIE === "string") {
+  calcularNIE(inputNIE)
 }
 
-if (inputNIE[0] === "Y") {
-  numberNIE = "1"+inputNIE.substring(1)
+if (typeof inputNIE === "number") {
+  calcularDNI(inputNIE)
 }
 
-if (inputNIE[0] === "Z") {
-  numberNIE = "2"+inputNIE.substring(1)
+
+function calcularDNI(calcularDNI) {
+  let finalDNI = letraDNI[inputNIE % 23]
+  console.log("Tu DNI completo es: " + inputNIE + finalDNI);
 }
 
-Number(numberNIE)
-let finalNIE = letraDNI[numberNIE%23]
+function calcularNIE(calcularNIE) {
+  if (inputNIE[0] === "X") {
+    numberNIE = "0" + inputNIE.substring(1)
+  }
 
-console.log("EL numero de tu NIE completo es: " + inputNIE + finalNIE);
+  if (inputNIE[0] === "Y") {
+    numberNIE = "1" + inputNIE.substring(1)
+  }
+
+  if (inputNIE[0] === "Z") {
+    numberNIE = "2" + inputNIE.substring(1)
+  }
+
+  Number(numberNIE)
+  let finalNIE = letraDNI[numberNIE % 23]
+
+  console.log("EL numero de tu NIE completo es: " + inputNIE + finalNIE);
+}
