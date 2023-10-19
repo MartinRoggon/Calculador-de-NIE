@@ -14,7 +14,7 @@ const letraDNI = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N
 
 //? En este input vas a meter tu DNI o NIE. 
 //? Si es un DNI, tienes que entrarlo de type = number, si es un NIE tienes que entrarlo de type = string:
-let inputNIE = "X1234567"
+let inputNIE = 81234567
 
 
 let numberNIE
@@ -30,7 +30,7 @@ if (typeof inputNIE === "number") {
 
 function calcularDNI(calcularDNI) {
   let finalDNI = letraDNI[inputNIE % 23]
-  console.log("Tu DNI completo es: " + inputNIE + finalDNI);
+  console.log("Eres Español: El numero de tu DNI completo es: " + inputNIE + finalDNI);
 }
 
 function calcularNIE(calcularNIE) {
@@ -49,5 +49,5 @@ function calcularNIE(calcularNIE) {
   Number(numberNIE)
   let finalNIE = letraDNI[numberNIE % 23]
 
-  console.log("EL numero de tu NIE completo es: " + inputNIE + finalNIE);
+  console.log("Eres Extranjero residente en España: EL numero de tu NIE completo es: " + inputNIE + finalNIE);
 }
