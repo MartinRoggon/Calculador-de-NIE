@@ -17,8 +17,6 @@ const letraDNI = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N
 let inputNIE = 81234567
 
 
-let numberNIE
-
 if (typeof inputNIE === "string") {
   calcularNIE(inputNIE)
 }
@@ -34,6 +32,8 @@ function calcularDNI(calcularDNI) {
 }
 
 function calcularNIE(calcularNIE) {
+  let numberNIE
+
   if (inputNIE[0] === "X") {
     numberNIE = "0" + inputNIE.substring(1)
   }
@@ -47,6 +47,7 @@ function calcularNIE(calcularNIE) {
   }
 
   Number(numberNIE)
+  
   let finalNIE = letraDNI[numberNIE % 23]
 
   console.log("Eres Extranjero residente en España: EL numero de tu NIE completo es: " + inputNIE + finalNIE);
