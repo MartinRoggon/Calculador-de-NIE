@@ -9,4 +9,6 @@ Make sure that you fill in type string for NIE and type number for DNI.
 
 The first if clause (lines 22-28) will check if your input is a number or a string and will trigger the appropriate function.
 
+Now run the code in your terminal using node.js
+
 The function for each will console-log the result with your completed DNI or NIE number.
