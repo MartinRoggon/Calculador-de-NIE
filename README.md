@@ -1,5 +1,5 @@
 # Calculador-de-NIE
-I have designed a calculater that completes your Spanish NIE with the correct letter at the end using javascript
+I have designed a calculater that completes your Spanish NIE or DNI with the correct letter at the end using javascript
 
 This is a study for me to understand better the basic funtionality of javascript. 
 Since I have not yet the knowledge to pair this with a proper form and input request, in order to use this program do the following:
