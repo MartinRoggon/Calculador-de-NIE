@@ -1,3 +1,14 @@
+//* Para coger la logica aca la informacion de interior.gob.es: 
+/* « Los NIE's de extranjeros residentes en España tienen una letra (X, Y, Z), 7 números y dígito de control.
+
+Para el cálculo del dígito de control se sustituye:
+
+X → 0
+Y → 1
+Z → 2
+
+y se aplica el mismo algoritmo que para el NIF. »  */
+
 
 const letraDNI = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
 
