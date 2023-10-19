@@ -12,8 +12,10 @@ y se aplica el mismo algoritmo que para el NIF. »  */
 
 const letraDNI = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
 
-
+//? En este input vas a meter tu DNI o NIE. 
+//? Si es un DNI, tienes que entrarlo de type = number, si es un NIE tienes que entrarlo de type = string:
 let inputNIE = "X1234567"
+
 
 let numberNIE
 
